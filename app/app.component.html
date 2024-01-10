@@ -1,0 +1,15 @@
+<!-- header -->
+<app-demo></app-demo>
+<app-personal-info (Event)="personal=$event"></app-personal-info>
+
+<app-buginfo (ev)="bug=$event"></app-buginfo>
+
+
+  <button  (click)="final()" type="button" class="btn btn-primary">
+    Display
+  </button>
+
+<p>{{pers}}</p>
+<p>{{nu}}</p>
+
+<router-outlet></router-outlet>

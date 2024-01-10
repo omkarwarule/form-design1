@@ -1,0 +1,22 @@
+<div [style.margin-top]="'20px'" [style.margin-left]="'10px'">
+    <div class="row">
+      <div class="col-xs-12 col-12 col-md-4 form-group mb-3">
+        <input
+          placeholder="Datepicker"
+          class="form-control"
+          #dp="bsDatepicker"
+          bsDatepicker>
+      </div>
+      <div class="col-xs-12 col-12 col-md-3 form-group mb-3">
+        <button class="btn btn-success" (click)="dp.toggle()" [attr.aria-expanded]="dp.isOpen" type="button">Date Picker</button>
+      </div>
+    </div>
+    <br>
+  </div>
+  <div [style.margin-left]="'10px'">
+    <p >Impact</p>
+    <input #im [style.width]="'500px'"type="text">
+  <p>Detailed Explaination of bug*</p>
+  <input #ex  (click)="send(im.value,ex.value)"   [style.width]="'500px'"  [style.height]="'200px'"type="text">
+  
+  </div>
